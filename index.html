@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="fontawsome/css/all.min.css">
   <link rel="stylesheet" href="fontawsome/css/fontawesome.min.css">
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/javascript-calendar.css">
   <!-- <link rel="stylesheet" href="css/odometer.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/animate.min.css"> -->
@@ -180,6 +181,55 @@
     </div>
   </section>
   <!-- banner area end -->
+  <!-- news ticker area start -->
+  <section class="news_ticker_ara mt20">
+    <div class="container">
+      <div class="news_ticker d-flex align-items-center gap-1">
+        <div class="news_label flex-shrink-0"><span>LATEST:</span></div>
+        <div class="marquee">
+          <ul class="list-unstyled">
+            <li>
+              <a href="#">
+                Romina Dewan received Global Women Leadership Achievement Award 2015
+                <span>||</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                LEADS arranges Environmental Awareness Competition for school children Ist Phase at Public Library,
+                Shahbagh Dhaka
+                <span>||</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                LEADS arranges Environmental Awareness Competition for school children 2nd Phase at Shilpakala
+                Academy, Segun Bagicha , Dhaka
+                <span>||</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                LEADS organized SAARC Haveeru Coastal Awareness Festival for School Children
+                <span>||</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Sunnydale Student Volunteers, teach LEADS children as part of their community service
+                <span>||</span>
+              </a>
+              <a href="#">
+                Chief Guests with the Children of LEADS and the whole LEADS team (find pics on our gallery)
+                <span>||</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- news ticker area end -->
   <!-- event area start -->
   <section class="event_area mt20">
     <div class="container">
@@ -214,7 +264,9 @@
                 </div>
                 <div class="slider_item">
                   <div class="text">
-                    <a href="#">" Education - in all its forms and at all levels - is not only an end in itself but is also one of the most powerful instruments we have for bringing about the changes required to achieve sustainable development "
+                    <a href="#">" Education - in all its forms and at all levels - is not only an end in itself but is
+                      also one of the most powerful instruments we have for bringing about the changes required to
+                      achieve sustainable development "
                       <span>UNESCO's Director-General Koichiro Matsuura</span></a>
                   </div>
                 </div>
@@ -368,255 +420,45 @@
               <div class="calendar">
                 <h4 class="section_title">Event Calender
                 </h4>
-
-
-                <div class="widget wp-calendar">
-                  <h3 class="widget-head   colr">Event Calender</h3>
-                  <div id="view_calender" class="calendar">
-                    <div class="calender_link_header header-bg" style="width:100%">
-                      <div class="cal_prievious">
-                        <a onclick="calender('/pages/calender','11',2024)" href="javascript:void(0)"><span
-                            class="previmg calendar-prev">&nbsp;&nbsp;&nbsp;&nbsp;</span> </a>
-                        <a onclick="calender('/pages/calender','December',23)" href="javascript:void(0)"><span
-                            class="previmg calendar-prev">&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
+                <div class="evt_calendar">
+                  <div class="icalendar">
+                    <div class="icalendar__month">
+                      <div class="icalendar__prev" onclick="moveDate('prev')">
+                        <span>&#10094</span>
                       </div>
-                      <div class="cal_present">
-                        <h3>December </h3>
-                        <h6>2024</h6>
+                      <div class="icalendar__current-date">
+                        <h2 id="icalendarMonth"></h2>
+                        <div>
+                          <div id="icalendarDateStr"></div>
+                        </div>
+  
                       </div>
-                      <div class="cal_next">
-                        <a onclick="calender('/pages/calender','01',2024)" href="javascript:void(0)"><span
-                            class="previmg calendar-next"></span> </a>
-                        <a onclick="calender('/pages/calender','December',25)" href="javascript:void(0)"><span
-                            class=" previmg calendar-next"></span> </a>
+                      <div class="icalendar__next" onclick="moveDate('next')">
+                        <span>&#10095</span>
                       </div>
                     </div>
-                    <table cellpadding="0" cellspacing="0" class="calendar">
-                      <tbody>
-                        <tr class="calendar-row day-head">
-                          <td class="calendar-day-head">SUN</td>
-                          <td class="calendar-day-head">MON</td>
-                          <td class="calendar-day-head">TES</td>
-                          <td class="calendar-day-head">WED</td>
-                          <td class="calendar-day-head">THU</td>
-                          <td class="calendar-day-head">FRI</td>
-                          <td class="calendar-day-head">SAT</td>
-                        </tr>
-                        <tr class="calendar-row dates">
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">1</div>
-                          </td>
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">2</div>
-                          </td>
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">3</div>
-                          </td>
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">4</div>
-                          </td>
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">5</div>
-                          </td>
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">6</div>
-                          </td>
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">7</div>
-                          </td>
-                        </tr>
-                        <tr class="calendar-row dates">
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">8</div>
-                          </td>
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">9</div>
-                          </td>
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">10</div>
-                          </td>
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">11</div>
-                          </td>
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">12</div>
-                          </td>
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">13</div>
-                          </td>
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">14</div>
-                          </td>
-                        </tr>
-                        <tr class="calendar-row dates">
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">15</div>
-                          </td>
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">16</div>
-                          </td>
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">17</div>
-                          </td>
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">18</div>
-                          </td>
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">19</div>
-                          </td>
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">20</div>
-                          </td>
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">21</div>
-                          </td>
-                        </tr>
-                        <tr class="calendar-row dates">
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number current_day">22</div>
-                          </td>
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">23</div>
-                          </td>
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">24</div>
-                          </td>
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">25</div>
-                          </td>
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">26</div>
-                          </td>
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">27</div>
-                          </td>
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">28</div>
-                          </td>
-                        </tr>
-                        <tr class="calendar-row dates">
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">29</div>
-                          </td>
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">30</div>
-                          </td>
-                          <td class="calendar-day-body ">
-                            <div class="event">
-                              <ul> </ul>
-                            </div>
-                            <div class="day-number ">31</div>
-                          </td>
-                          <td class="calendar-day-np"> </td>
-                          <td class="calendar-day-np"> </td>
-                          <td class="calendar-day-np"> </td>
-                          <td class="calendar-day-np"> </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    <div class="icalendar__week-days">
+                      <div>Sun</div>
+                      <div>Mon</div>
+                      <div>Tue</div>
+                      <div>Wed</div>
+                      <div>Thu</div>
+                      <div>Fri</div>
+                      <div>Sat</div>
+                    </div>
+                    <div class="icalendar__days"></div>
                   </div>
                 </div>
-
 
               </div>
               <div class="news mt20">
                 <h4 class="section_title">Latest News
                 </h4>
                 <ul class="list-unstyled news_slider">
-                  <li class="d-flex align-items-center gap-3">
+                  <li class="d-flex gap-3">
                     <div class="date flex-shrink-0">
                       <span class="number">14</span>
-                      <span class="month">FEB</span>
+                      <span class="nmonth">FEB</span>
                     </div>
                     <div class="desc flex-grow-1">
                       <a href="#" class="title txthover">
@@ -624,10 +466,10 @@
                       </a>
                       <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
                   </li>
-                  <li class="d-flex align-items-center gap-3">
+                  <li class="d-flex gap-3">
                     <div class="date flex-shrink-0">
                       <span class="number">14</span>
-                      <span class="month">FEB</span>
+                      <span class="nmonth">FEB</span>
                     </div>
                     <div class="desc flex-grow-1">
                       <a href="#" class="title txthover">
@@ -635,10 +477,10 @@
                       </a>
                       <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
                   </li>
-                  <li class="d-flex align-items-center gap-3">
+                  <li class="d-flex gap-3">
                     <div class="date flex-shrink-0">
                       <span class="number">14</span>
-                      <span class="month">FEB</span>
+                      <span class="nmonth">FEB</span>
                     </div>
                     <div class="desc flex-grow-1">
                       <a href="#" class="title txthover">
@@ -646,10 +488,10 @@
                       </a>
                       <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
                   </li>
-                  <li class="d-flex align-items-center gap-3">
+                  <li class="d-flex gap-3">
                     <div class="date flex-shrink-0">
                       <span class="number">14</span>
-                      <span class="month">FEB</span>
+                      <span class="nmonth">FEB</span>
                     </div>
                     <div class="desc flex-grow-1">
                       <a href="#" class="title txthover">
@@ -657,10 +499,10 @@
                       </a>
                       <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
                   </li>
-                  <li class="d-flex align-items-center gap-3">
+                  <li class="d-flex gap-3">
                     <div class="date flex-shrink-0">
                       <span class="number">14</span>
-                      <span class="month">FEB</span>
+                      <span class="nmonth">FEB</span>
                     </div>
                     <div class="desc flex-grow-1">
                       <a href="#" class="title txthover">
@@ -668,10 +510,10 @@
                       </a>
                       <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
                   </li>
-                  <li class="d-flex align-items-center gap-3">
+                  <li class="d-flex gap-3">
                     <div class="date flex-shrink-0">
                       <span class="number">14</span>
-                      <span class="month">FEB</span>
+                      <span class="nmonth">FEB</span>
                     </div>
                     <div class="desc flex-grow-1">
                       <a href="#" class="title txthover">
@@ -679,10 +521,10 @@
                       </a>
                       <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
                   </li>
-                  <li class="d-flex align-items-center gap-3">
+                  <li class="d-flex gap-3">
                     <div class="date flex-shrink-0">
                       <span class="number">14</span>
-                      <span class="month">FEB</span>
+                      <span class="nmonth">FEB</span>
                     </div>
                     <div class="desc flex-grow-1">
                       <a href="#" class="title txthover">
@@ -690,10 +532,10 @@
                       </a>
                       <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
                   </li>
-                  <li class="d-flex align-items-center gap-3">
+                  <li class="d-flex gap-3">
                     <div class="date flex-shrink-0">
                       <span class="number">14</span>
-                      <span class="month">FEB</span>
+                      <span class="nmonth">FEB</span>
                     </div>
                     <div class="desc flex-grow-1">
                       <a href="#" class="title txthover">
@@ -701,10 +543,10 @@
                       </a>
                       <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
                   </li>
-                  <li class="d-flex align-items-center gap-3">
+                  <li class="d-flex gap-3">
                     <div class="date flex-shrink-0">
                       <span class="number">14</span>
-                      <span class="month">FEB</span>
+                      <span class="nmonth">FEB</span>
                     </div>
                     <div class="desc flex-grow-1">
                       <a href="#" class="title txthover">
@@ -712,10 +554,10 @@
                       </a>
                       <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
                   </li>
-                  <li class="d-flex align-items-center gap-3">
+                  <li class="d-flex gap-3">
                     <div class="date flex-shrink-0">
                       <span class="number">14</span>
-                      <span class="month">FEB</span>
+                      <span class="nmonth">FEB</span>
                     </div>
                     <div class="desc flex-grow-1">
                       <a href="#" class="title txthover">
@@ -795,6 +637,8 @@
   <script src="js/jquery-1.7.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/jquery.marquee.js"></script>
+  <script src="js/javascript-calendar.js"></script>
   <!-- <script src="js/gsap.js"></script>
   <script src="js/gsap-scroll-trigger.js"></script>
   <script src="js/gsap-split-text.js"></script>
