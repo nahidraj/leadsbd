@@ -3,7 +3,7 @@
 }
 
 .icalendar {
-    background-color: #f7f7f7;
+    background-color: transparent;
     border: 2px solid white;
     /* -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1); */
     /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1); */
@@ -87,18 +87,23 @@
     padding: 9px 0;
     -webkit-transition: .3s;
     transition: .3s;
-    background-image: url(../images/calendar-bg.gif) no-repeat scroll left center rgba(0, 0, 0, 0);
+    background-image: url(../images/calendar-bg.gif);
     border: 1px solid #E2E2E2;
 }
 
 .icalendar__days div:hover {
-    background-color: #005EB5;
+    background: #005EB5;
     cursor: pointer;
     color: #fff;
 }
 
 .icalendar__today {
-    background-color: #51A351;
+    background: #51A351 !important;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9);
+    color: white;
+}
+.icalendar__today:hover {
+    background: #51A351 !important;
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9);
     color: white;
 }
