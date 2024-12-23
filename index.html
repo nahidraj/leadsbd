@@ -13,17 +13,29 @@
   <link rel="stylesheet" href="fontawsome/css/all.min.css">
   <link rel="stylesheet" href="fontawsome/css/fontawesome.min.css">
   <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/odometer.css">
+  <!-- <link rel="stylesheet" href="css/odometer.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
-  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/animate.min.css"> -->
+  <link rel="stylesheet" href="css/nivo-slider.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 
 <body>
 
   <!-- header area start -->
+  <section class="top_header">
+    <div class="container">
+      <div class="date-and-time d-flex gap-2 justify-content-end align-items-center">
+        <div class="dates d-none d-xxl-block">
+          <h5 id="date"></h5>
+        </div>
+        <div class="times">
+          <h5><span id="time"></span></h5>
+        </div>
+      </div>
+    </div>
+  </section>
   <header class="header_area">
     <div class="container">
       <nav class="d-flex justify-content-between align-items-center">
@@ -155,11 +167,14 @@
 
   <!-- main area start -->
   <!-- banner area start -->
-  <section class="banner_area mt20">
+  <section class="banner_area">
     <div class="container">
       <div class="banner_main">
-        <div class="banner_slider">
-          <img src="images/slider-1.jpg" alt="slider" class="img-fluid w-100">
+        <div class="banner_slider nivoSlider" id="slider">
+          <img src="images/slider-1.jpg" data-thumb="images/slider-1.jpg" alt="slider" class="img-fluid w-100">
+          <img src="images/slider-2.jpg" data-thumb="images/slider-2.jpg" alt="slider" class="img-fluid w-100">
+          <img src="images/slider-3.jpg" data-thumb="images/slider-3.jpg" alt="slider" class="img-fluid w-100">
+          <img src="images/slider-4.jpg" data-thumb="images/slider-4.jpg" alt="slider" class="img-fluid w-100">
         </div>
       </div>
     </div>
@@ -168,15 +183,67 @@
   <!-- event area start -->
   <section class="event_area mt20">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="event_item"></div>
-        </div>
-        <div class="col-lg-4">
-          <div class="event_item"></div>
-        </div>
-        <div class="col-lg-4">
-          <div class="event_item"></div>
+      <div class="event_main">
+        <div class="row g-4 event_row">
+          <div class="col-lg-4 event_wrapper">
+            <div class="event_item">
+              <div class="event_slider">
+                <div class="slider_item">
+                  <div class="img">
+                    <img src="images/event-img-1.1.jpg" alt="event-img" class="img-fluid w-100">
+                  </div>
+                  <div class="text">
+                    <p>Invest in Education !</p>
+                  </div>
+                </div>
+                <div class="slider_item">
+                  <div class="img">
+                    <img src="images/event-img-1.2.jpg" alt="event-img" class="img-fluid w-100">
+                  </div>
+                  <div class="text">
+                    <p>Reduce and save your extra dress, money for the poor !</p>
+                  </div>
+                </div>
+                <div class="slider_item">
+                  <div class="img">
+                    <img src="images/event-img-1.3.jpg" alt="event-img" class="img-fluid w-100">
+                  </div>
+                  <div class="text">
+                    <p>Your one Day lunch at good hotel can bear an educational expense of two children !</p>
+                  </div>
+                </div>
+                <div class="slider_item">
+                  <div class="text">
+                    <a href="#">" Education - in all its forms and at all levels - is not only an end in itself but is also one of the most powerful instruments we have for bringing about the changes required to achieve sustainable development "
+                      <span>UNESCO's Director-General Koichiro Matsuura</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 event_wrapper">
+            <div class="event_item social_event">
+              <h4 class="section_title title_orange border-0 mb-0">How We Make A Difference</h4>
+              <div class="img">
+                <img src="images/event-img-2.jpg" alt="event-img" class="img-fluid w-100">
+              </div>
+              <div class="text">
+                <h4 class="title">Social Events</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 event_wrapper">
+            <div class="event_item donate">
+              <h4 class="section_title border-0 mb-0">Help The Poor & Get Involved </h4>
+              <div class="img">
+                <img src="images/event-img-3.jpg" alt="event-img" class="img-fluid w-100">
+              </div>
+              <div class="button_groups position-relative z-1">
+                <a href="#"> Volunteer</a>
+                <a href="#"> Donate</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -540,12 +607,67 @@
                   </div>
                 </div>
 
-                
+
               </div>
               <div class="news mt20">
                 <h4 class="section_title">Latest News
                 </h4>
-                <ul class="list-unstyled">
+                <ul class="list-unstyled news_slider">
+                  <li class="d-flex align-items-center gap-3">
+                    <div class="date flex-shrink-0">
+                      <span class="number">14</span>
+                      <span class="month">FEB</span>
+                    </div>
+                    <div class="desc flex-grow-1">
+                      <a href="#" class="title txthover">
+                        Environmental Awareness Session at Residential Model School and College on 14th February 2013
+                      </a>
+                      <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
+                  </li>
+                  <li class="d-flex align-items-center gap-3">
+                    <div class="date flex-shrink-0">
+                      <span class="number">14</span>
+                      <span class="month">FEB</span>
+                    </div>
+                    <div class="desc flex-grow-1">
+                      <a href="#" class="title txthover">
+                        Environmental Awareness Session at Residential Model School and College on 14th February 2013
+                      </a>
+                      <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
+                  </li>
+                  <li class="d-flex align-items-center gap-3">
+                    <div class="date flex-shrink-0">
+                      <span class="number">14</span>
+                      <span class="month">FEB</span>
+                    </div>
+                    <div class="desc flex-grow-1">
+                      <a href="#" class="title txthover">
+                        Environmental Awareness Session at Residential Model School and College on 14th February 2013
+                      </a>
+                      <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
+                  </li>
+                  <li class="d-flex align-items-center gap-3">
+                    <div class="date flex-shrink-0">
+                      <span class="number">14</span>
+                      <span class="month">FEB</span>
+                    </div>
+                    <div class="desc flex-grow-1">
+                      <a href="#" class="title txthover">
+                        Environmental Awareness Session at Residential Model School and College on 14th February 2013
+                      </a>
+                      <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
+                  </li>
+                  <li class="d-flex align-items-center gap-3">
+                    <div class="date flex-shrink-0">
+                      <span class="number">14</span>
+                      <span class="month">FEB</span>
+                    </div>
+                    <div class="desc flex-grow-1">
+                      <a href="#" class="title txthover">
+                        Environmental Awareness Session at Residential Model School and College on 14th February 2013
+                      </a>
+                      <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
+                  </li>
                   <li class="d-flex align-items-center gap-3">
                     <div class="date flex-shrink-0">
                       <span class="number">14</span>
@@ -670,17 +792,18 @@
 
 
   <!-- all js link -->
-  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery-1.7.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/gsap.js"></script>
+  <script src="js/slick.min.js"></script>
+  <!-- <script src="js/gsap.js"></script>
   <script src="js/gsap-scroll-trigger.js"></script>
   <script src="js/gsap-split-text.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/slick.min.js"></script>
   <script src="js/jquery.appear.js"></script>
   <script src="js/jquery.odometer.min.js"></script>
   <script src="js/isotop-activate.js"></script>
-  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script> -->
+  <script src="js/jquery.nivo.slider.js"></script>
   <script src="js/script.js"></script>
 </body>
 

@@ -1,28 +1,45 @@
-.header_area{
-  .logo{
-    
+.top_header {
+  background: $primary;
+padding: 7px 0;
+  .dates,
+  .times {
+    h5 {
+      line-height: 18px;
+      font-size: 12px;
+      text-align: justify;
+      color: $white;
+    }
   }
-  .menu{
-    ul{
-      li{
-        a{
+}
+
+.header_area {
+  padding: 20px 0;
+
+
+  .menu {
+    ul {
+      li {
+        a {
           font-size: 14px;
           font-weight: 400;
           color: $primary;
           padding: 7px 10px 7px 10px;
           background: transparent;
           border-radius: 3px;
-          &:hover{
+
+          &:hover {
             background: $primary;
             color: $white;
           }
         }
-        .active{
+
+        .active {
           background: $primary;
           color: $white;
         }
       }
-      li+li{
+
+      li+li {
         padding-left: 6px;
       }
     }
@@ -141,7 +158,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  svg{
+
+  svg {
     width: 20px;
     height: 20px;
   }
@@ -292,7 +310,7 @@
     }
 
     .title {
-      
+
       margin-bottom: 15px;
     }
   }
@@ -324,7 +342,7 @@
 
           a,
           p {
-            
+
             color: $black;
           }
 

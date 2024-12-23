@@ -1,4 +1,32 @@
-.banner_main{
+.banner_main {
   border: 1px solid $border;
   padding: 20px;
+
+  .nivo-prevNav,
+  .nivo-nextNav {
+    transition: none;
+    margin-top: -30px;
+  }
+
+  .nivo-prevNav {
+    width: 51px;
+    height: 96px;
+    display: inline-block !important;
+    background: url(../images/banner-arrows.png) no-repeat 0px 0px;
+  }
+
+  .nivo-nextNav {
+    width: 51px;
+    height: 96px;
+    display: inline-block !important;
+    background: url(../images/banner-arrows.png) no-repeat -51px 0px;
+  }
+
+  .nivo-prevNav:hover {
+    background: url(../images/banner-arrows.png) no-repeat 0px -96px;
+  }
+
+  .nivo-nextNav:hover {
+    background: url(../images/banner-arrows.png) no-repeat -51px -96px;
+  }
 }
