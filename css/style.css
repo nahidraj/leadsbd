@@ -1267,6 +1267,13 @@ p {
   color: #ffffff;
   border-color: #005EB5;
 }
+.content_page_body .common_tabs .nav .active {
+  background-image: none;
+  background-color: #005EB5;
+  text-shadow: none;
+  color: #ffffff;
+  border-color: #005EB5;
+}
 .content_page_body .common_tabs .tab-content {
   border: 1px solid #e6e6e6;
   padding: 14px;

@@ -43,6 +43,13 @@
           border-color: $primary;
         }
       }
+      .active{
+        background-image: none;
+        background-color: $primary;
+        text-shadow: none;
+        color: $white;
+        border-color: $primary;
+      }
     }
     .tab-content{
       border: 1px solid $border;
