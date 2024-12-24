@@ -1,6 +1,7 @@
 .top_header {
   background: $primary;
-padding: 7px 0;
+  padding: 7px 0;
+
   .dates,
   .times {
     h5 {
@@ -14,11 +15,14 @@ padding: 7px 0;
 
 .header_area {
   padding: 20px 0;
-
+  position: relative;
+  z-index: 999;
 
   .menu {
     ul {
       li {
+        position: relative;
+
         a {
           font-size: 14px;
           font-weight: 400;
@@ -26,16 +30,56 @@ padding: 7px 0;
           padding: 7px 10px 7px 10px;
           background: transparent;
           border-radius: 3px;
+        }
 
-          &:hover {
-            background: $primary;
-            color: $white;
+        .sub_menu {
+          width: 200px;
+          background: $primary;
+          border-radius: 5px;
+          position: absolute;
+          top: 100%;
+          left: 6px;
+          overflow: hidden;
+          visibility: hidden;
+          opacity: 0;
+          transition: $transition;
+          border-top-left-radius: 0;
+
+          li {
+            a {
+              font-size: 14px;
+              border-radius: 2px;
+              padding: 10px 10px;
+              color: $white;
+              background: transparent;
+              width: 100%;
+
+              &:hover {
+                background: #33CCFF;
+
+              }
+            }
+          }
+
+          li+li {
+            padding-left: 0;
           }
         }
 
         .active {
           background: $primary;
           color: $white;
+        }
+
+        &:hover {
+          .sub_menu{
+            visibility: visible;
+            opacity: 1;
+          }
+          .main_menu {
+            background: $primary;
+            color: $white;
+          }
         }
       }
 

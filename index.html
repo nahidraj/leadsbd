@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Leads Bangladesh</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <meta name="description" content="RnaR Space">
+  <meta name="description" content="Leads Bangladesh">
   <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
   <!--all css link -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="fontawsome/css/fontawesome.min.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/javascript-calendar.css">
+  <link rel="stylesheet" href="css/lightbox.css">
   <!-- <link rel="stylesheet" href="css/odometer.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/animate.min.css"> -->
@@ -47,15 +48,43 @@
         </div>
         <div class="menu">
           <ul class="list-unstyled d-flex align-items-center flex-wrap justify-content-end">
-            <li><a href="#" class="active"><i class="fa-solid fa-house"></i></a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">What we do</a></li>
-            <li><a href="#">Sponsors and Partners</a></li>
-            <li><a href="#"> Supports Us</a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Video Gallery</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#" class="active main_menu"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="#" class="main_menu">About Us</a>
+              <ul class="list-unstyled sub_menu">
+                <li><a href="content.html">Mission and Vision</a></li>
+                <li><a href="content.html">Who We Are</a></li>
+                <li><a href="content.html">Our Management</a></li>
+                <li><a href="content.html">Our Team</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="main_menu">What we do</a>
+              <ul class="list-unstyled sub_menu">
+                <li><a href="content.html">Routine Activites</a></li>
+                <li><a href="content.html">Making A Difference</a></li>
+                <li><a href="content.html">Challanges We Face</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="main_menu">Sponsors and Partners</a>
+              <ul class="list-unstyled sub_menu">
+                <li><a href="content.html">Institutional Sponsors</a></li>
+                <li><a href="content.html">Partners For Growth</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="main_menu">Supports Us</a>
+              <ul class="list-unstyled sub_menu">
+                <li><a href="content.html">Volunteer For Us</a></li>
+                <li><a href="content.html">Make Donations</a></li>
+              </ul>
+            </li>
+            <li><a href="reports.html" class="main_menu">Reports</a>
+              <ul class="list-unstyled sub_menu">
+                <li><a href="content.html">Anual Progress Reports</a></li>
+                <li><a href="content.html">Reports of The Children</a></li>
+              </ul>
+            </li>
+            <li><a href="gallery.html" class="main_menu">Gallery</a></li>
+            <li><a href="video-gallery.html" class="main_menu">Video Gallery</a></li>
+            <li><a href="contact.html" class="main_menu">Contact Us</a></li>
           </ul>
         </div>
       </nav>
@@ -66,7 +95,7 @@
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
             <div class="logo">
-              <a href="index.html"> <img src="images/logo.svg" alt="logo">
+              <a href="index.html"> <img src="images/logo.png" alt="logo">
               </a>
             </div>
             <div class="bars">
@@ -78,7 +107,7 @@
       <div class="mobile-menu-overlay"></div>
       <div class="mobile-menu-main">
         <div class="logo">
-          <a href="index.html"><img src="images/logo.svg" alt="logo">
+          <a href="index.html"><img src="images/logo.png" alt="logo">
           </a>
         </div>
         <div class="close-mobile-menu"><i class="fas fa-times"></i></div>
@@ -167,438 +196,450 @@
   <!-- header area end -->
 
   <!-- main area start -->
-  <!-- banner area start -->
-  <section class="banner_area">
-    <div class="container">
-      <div class="banner_main">
-        <div class="banner_slider nivoSlider" id="slider">
-          <img src="images/slider-1.jpg" data-thumb="images/slider-1.jpg" alt="slider" class="img-fluid w-100">
-          <img src="images/slider-2.jpg" data-thumb="images/slider-2.jpg" alt="slider" class="img-fluid w-100">
-          <img src="images/slider-3.jpg" data-thumb="images/slider-3.jpg" alt="slider" class="img-fluid w-100">
-          <img src="images/slider-4.jpg" data-thumb="images/slider-4.jpg" alt="slider" class="img-fluid w-100">
+  <main>
+    <!-- banner area start -->
+    <section class="banner_area">
+      <div class="container">
+        <div class="banner_main">
+          <div class="banner_slider nivoSlider" id="slider">
+            <img src="images/slider-1.jpg" data-thumb="images/slider-1.jpg" alt="slider" class="img-fluid w-100">
+            <img src="images/slider-2.jpg" data-thumb="images/slider-2.jpg" alt="slider" class="img-fluid w-100">
+            <img src="images/slider-3.jpg" data-thumb="images/slider-3.jpg" alt="slider" class="img-fluid w-100">
+            <img src="images/slider-4.jpg" data-thumb="images/slider-4.jpg" alt="slider" class="img-fluid w-100">
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- banner area end -->
-  <!-- news ticker area start -->
-  <section class="news_ticker_ara mt20">
-    <div class="container">
-      <div class="news_ticker d-flex align-items-center gap-1">
-        <div class="news_label flex-shrink-0"><span>LATEST:</span></div>
-        <div class="marquee">
-          <ul class="list-unstyled">
-            <li>
-              <a href="#">
-                Romina Dewan received Global Women Leadership Achievement Award 2015
-                <span>||</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                LEADS arranges Environmental Awareness Competition for school children Ist Phase at Public Library,
-                Shahbagh Dhaka
-                <span>||</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                LEADS arranges Environmental Awareness Competition for school children 2nd Phase at Shilpakala
-                Academy, Segun Bagicha , Dhaka
-                <span>||</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                LEADS organized SAARC Haveeru Coastal Awareness Festival for School Children
-                <span>||</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Sunnydale Student Volunteers, teach LEADS children as part of their community service
-                <span>||</span>
-              </a>
-              <a href="#">
-                Chief Guests with the Children of LEADS and the whole LEADS team (find pics on our gallery)
-                <span>||</span>
-              </a>
-            </li>
-          </ul>
+    </section>
+    <!-- banner area end -->
+    <!-- news ticker area start -->
+    <section class="news_ticker_ara mt20">
+      <div class="container">
+        <div class="news_ticker d-flex align-items-center gap-1">
+          <div class="news_label flex-shrink-0"><span>LATEST:</span></div>
+          <div class="marquee">
+            <ul class="list-unstyled">
+              <li>
+                <a href="#">
+                  Romina Dewan received Global Women Leadership Achievement Award 2015
+                  <span>||</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  LEADS arranges Environmental Awareness Competition for school children Ist Phase at Public Library,
+                  Shahbagh Dhaka
+                  <span>||</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  LEADS arranges Environmental Awareness Competition for school children 2nd Phase at Shilpakala
+                  Academy, Segun Bagicha , Dhaka
+                  <span>||</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  LEADS organized SAARC Haveeru Coastal Awareness Festival for School Children
+                  <span>||</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Sunnydale Student Volunteers, teach LEADS children as part of their community service
+                  <span>||</span>
+                </a>
+                <a href="#">
+                  Chief Guests with the Children of LEADS and the whole LEADS team (find pics on our gallery)
+                  <span>||</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- news ticker area end -->
-  <!-- event area start -->
-  <section class="event_area mt20">
-    <div class="container">
-      <div class="event_main">
-        <div class="row g-4 event_row">
-          <div class="col-lg-4 event_wrapper">
-            <div class="event_item">
-              <div class="event_slider">
-                <div class="slider_item">
-                  <div class="img">
-                    <img src="images/event-img-1.1.jpg" alt="event-img" class="img-fluid w-100">
+    </section>
+    <!-- news ticker area end -->
+    <!-- event area start -->
+    <section class="event_area mt20">
+      <div class="container">
+        <div class="event_main">
+          <div class="row g-4 event_row">
+            <div class="col-lg-4 event_wrapper">
+              <div class="event_item">
+                <div class="event_slider">
+                  <div class="slider_item">
+                    <div class="img">
+                      <img src="images/event-img-1.1.jpg" alt="event-img" class="img-fluid w-100">
+                    </div>
+                    <div class="text">
+                      <p>Invest in Education !</p>
+                    </div>
                   </div>
-                  <div class="text">
-                    <p>Invest in Education !</p>
+                  <div class="slider_item">
+                    <div class="img">
+                      <img src="images/event-img-1.2.jpg" alt="event-img" class="img-fluid w-100">
+                    </div>
+                    <div class="text">
+                      <p>Reduce and save your extra dress, money for the poor !</p>
+                    </div>
                   </div>
-                </div>
-                <div class="slider_item">
-                  <div class="img">
-                    <img src="images/event-img-1.2.jpg" alt="event-img" class="img-fluid w-100">
+                  <div class="slider_item">
+                    <div class="img">
+                      <img src="images/event-img-1.3.jpg" alt="event-img" class="img-fluid w-100">
+                    </div>
+                    <div class="text">
+                      <p>Your one Day lunch at good hotel can bear an educational expense of two children !</p>
+                    </div>
                   </div>
-                  <div class="text">
-                    <p>Reduce and save your extra dress, money for the poor !</p>
-                  </div>
-                </div>
-                <div class="slider_item">
-                  <div class="img">
-                    <img src="images/event-img-1.3.jpg" alt="event-img" class="img-fluid w-100">
-                  </div>
-                  <div class="text">
-                    <p>Your one Day lunch at good hotel can bear an educational expense of two children !</p>
-                  </div>
-                </div>
-                <div class="slider_item">
-                  <div class="text">
-                    <a href="#">" Education - in all its forms and at all levels - is not only an end in itself but is
-                      also one of the most powerful instruments we have for bringing about the changes required to
-                      achieve sustainable development "
-                      <span>UNESCO's Director-General Koichiro Matsuura</span></a>
+                  <div class="slider_item">
+                    <div class="text">
+                      <a href="#">" Education - in all its forms and at all levels - is not only an end in itself but is
+                        also one of the most powerful instruments we have for bringing about the changes required to
+                        achieve sustainable development "
+                        <span>UNESCO's Director-General Koichiro Matsuura</span></a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 event_wrapper">
-            <div class="event_item social_event">
-              <h4 class="section_title title_orange border-0 mb-0">How We Make A Difference</h4>
-              <div class="img">
-                <img src="images/event-img-2.jpg" alt="event-img" class="img-fluid w-100">
-              </div>
-              <div class="text">
-                <h4 class="title">Social Events</h4>
+            <div class="col-lg-4 event_wrapper">
+              <div class="event_item social_event">
+                <h4 class="section_title title_orange border-0 mb-0">How We Make A Difference</h4>
+                <div class="img">
+                  <img src="images/event-img-2.jpg" alt="event-img" class="img-fluid w-100">
+                </div>
+                <div class="text">
+                  <h4 class="title">Social Events</h4>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 event_wrapper">
-            <div class="event_item donate">
-              <h4 class="section_title border-0 mb-0">Help The Poor & Get Involved </h4>
-              <div class="img">
-                <img src="images/event-img-3.jpg" alt="event-img" class="img-fluid w-100">
-              </div>
-              <div class="button_groups position-relative z-1">
-                <a href="#"> Volunteer</a>
-                <a href="#"> Donate</a>
+            <div class="col-lg-4 event_wrapper">
+              <div class="event_item donate">
+                <h4 class="section_title border-0 mb-0">Help The Poor & Get Involved </h4>
+                <div class="img">
+                  <img src="images/event-img-3.jpg" alt="event-img" class="img-fluid w-100">
+                </div>
+                <div class="button_groups position-relative z-1">
+                  <a href="#"> Volunteer</a>
+                  <a href="#"> Donate</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- event area end -->
-  <!-- what we do area start -->
-  <section class="what_we_do_area mt20">
-    <div class="container">
-      <div class="do_main">
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="left_sidebar">
-              <div class="service_wrapper">
-                <h4 class="section_title">What We Do
-                </h4>
-                <div class="single_service">
-                  <h3 class="title_main">Sustainable Education</h3>
-                  <div class="service_item d-flex">
-                    <div class="image flex-shrink-0">
-                      <img src="images/item-1.jpg" alt="item" class="img-fluid w-100">
-                    </div>
-                    <div class="text flex-grow-1">
-                      <h5 class="title">Livelihood Education And Development Services(LEADS) Foundation</h5>
-                      <p>LEADS provides quality & sustainable education & healthcare facilities through different
-                        awareness & education support programme, for the children especially underprivileged children
-                        enrolled in different government primary schools. LEADS mainly works towards development of the
-                        underprivileged section of the community with better and more effective learning process in
-                        existing government curriculum, while developing their social awareness, basic moral values and
-                        change their behaviour.
-                        <a href="#">Read More</a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="single_service">
-                  <h3 class="title_main">Awareness Programme</h3>
-                  <div class="service_item d-flex">
-                    <div class="image flex-shrink-0">
-                      <img src="images/item-2.jpg" alt="item" class="img-fluid w-100">
-                    </div>
-                    <div class="text flex-grow-1">
-                      <h5 class="title">AARC Haveeru Coastal Awareness Festival for School Children - 2012</h5>
-                      <p>LEADS organized a 3 day SAARC Haveeru Coastal Awareness Festival for School children from 16th
-                        November to 18th November 2012 supported by SAARC Coastal Zone Management Centre , Maldives .
-                        The
-                        theme of the event was " Save Coastal Area Save Bangladesh, Save Yourself ." For the first time
-                        this kind of event involving the school children has been organized where almost 400 children
-                        from
-                        different schools like Viqarunnisa Noon School and College,
-                        <a href="#">Read More</a>
-                      </p>
+    </section>
+    <!-- event area end -->
+    <!-- what we do area start -->
+    <section class="what_we_do_area mt20">
+      <div class="container">
+        <div class="do_main">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="left_sidebar">
+                <div class="service_wrapper">
+                  <h4 class="section_title">What We Do
+                  </h4>
+                  <div class="single_service">
+                    <h3 class="title_main">Sustainable Education</h3>
+                    <div class="service_item d-flex">
+                      <div class="image flex-shrink-0">
+                        <img src="images/item-1.jpg" alt="item" class="img-fluid w-100">
+                      </div>
+                      <div class="text flex-grow-1">
+                        <h5 class="title">Livelihood Education And Development Services(LEADS) Foundation</h5>
+                        <p>LEADS provides quality & sustainable education & healthcare facilities through different
+                          awareness & education support programme, for the children especially underprivileged children
+                          enrolled in different government primary schools. LEADS mainly works towards development of
+                          the
+                          underprivileged section of the community with better and more effective learning process in
+                          existing government curriculum, while developing their social awareness, basic moral values
+                          and
+                          change their behaviour.
+                          <a href="#">Read More</a>
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="single_service">
-                  <div class="service_item d-flex">
-                    <div class="image flex-shrink-0">
-                      <img src="images/item-3.jpg" alt="item" class="img-fluid w-100">
-                    </div>
-                    <div class="text flex-grow-1">
-                      <h5 class="title">AARC Haveeru Coastal Awareness Festival for School Children - 2012</h5>
-                      <p><strong>LEADS signed MoU with IDLC to conduct Environment Awareness Activity with school
-                          children for Phase-2</strong></p>
-                      <p>LEADS organized a 3 day SAARC Haveeru Coastal Awareness Festival for School children from 16th
-                        November to 18th November 2012 supported by SAARC Coastal Zone Management Centre , Maldives .
-                        The
-                        theme of the event was " Save Coastal Area Save Bangladesh, Save Yourself ." For the first time
-                        this kind of event involving the school children has been organized where almost 400 children
-                        from
-                        different schools like Viqarunnisa Noon School and College,
-                        <a href="#">Read More</a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="single_service">
-                  <div class="service_item d-flex">
-                    <div class="image flex-shrink-0">
-                      <img src="images/item-4.jpeg" alt="item" class="img-fluid w-100">
-                    </div>
-                    <div class="text flex-grow-1">
-                      <h5 class="title">AARC Haveeru Coastal Awareness Festival for School Children - 2012</h5>
-                      <p>LEADS organized a 3 day SAARC Haveeru Coastal Awareness Festival for School children from 16th
-                        November to 18th November 2012 supported by SAARC Coastal Zone Management Centre , Maldives .
-                        The
-                        theme of the event was " Save Coastal Area Save Bangladesh, Save Yourself ." For the first time
-                        this kind of event involving the school children has been organized where almost 400 children
-                        from
-                        different schools like Viqarunnisa Noon School and College,
-                        <a href="#">Read More</a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="single_service">
-                  <div class="service_item d-flex">
-                    <div class="image flex-shrink-0">
-                      <img src="images/item-5.jpg" alt="item" class="img-fluid w-100">
-                    </div>
-                    <div class="text flex-grow-1">
-                      <h5 class="title">AARC Haveeru Coastal Awareness Festival for School Children - 2012</h5>
-                      <p class="text-center"><strong>Workshop with the School Teachers</strong></p>
-                      <p><strong>LEADS organized a 3 day SAARC Haveeru Coastal Awareness Festival for School children
-                          from 16th
+                  <div class="single_service">
+                    <h3 class="title_main">Awareness Programme</h3>
+                    <div class="service_item d-flex">
+                      <div class="image flex-shrink-0">
+                        <img src="images/item-2.jpg" alt="item" class="img-fluid w-100">
+                      </div>
+                      <div class="text flex-grow-1">
+                        <h5 class="title">AARC Haveeru Coastal Awareness Festival for School Children - 2012</h5>
+                        <p>LEADS organized a 3 day SAARC Haveeru Coastal Awareness Festival for School children from
+                          16th
                           November to 18th November 2012 supported by SAARC Coastal Zone Management Centre , Maldives .
                           The
                           theme of the event was " Save Coastal Area Save Bangladesh, Save Yourself ." For the first
                           time
                           this kind of event involving the school children has been organized where almost 400 children
                           from
-                          different schools like Viqarunnisa Noon School and College,</strong>
-                        <a href="#">Read More</a>
-                      </p>
+                          different schools like Viqarunnisa Noon School and College,
+                          <a href="#">Read More</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="single_service">
+                    <div class="service_item d-flex">
+                      <div class="image flex-shrink-0">
+                        <img src="images/item-3.jpg" alt="item" class="img-fluid w-100">
+                      </div>
+                      <div class="text flex-grow-1">
+                        <h5 class="title">AARC Haveeru Coastal Awareness Festival for School Children - 2012</h5>
+                        <p><strong>LEADS signed MoU with IDLC to conduct Environment Awareness Activity with school
+                            children for Phase-2</strong></p>
+                        <p>LEADS organized a 3 day SAARC Haveeru Coastal Awareness Festival for School children from
+                          16th
+                          November to 18th November 2012 supported by SAARC Coastal Zone Management Centre , Maldives .
+                          The
+                          theme of the event was " Save Coastal Area Save Bangladesh, Save Yourself ." For the first
+                          time
+                          this kind of event involving the school children has been organized where almost 400 children
+                          from
+                          different schools like Viqarunnisa Noon School and College,
+                          <a href="#">Read More</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="single_service">
+                    <div class="service_item d-flex">
+                      <div class="image flex-shrink-0">
+                        <img src="images/item-4.jpeg" alt="item" class="img-fluid w-100">
+                      </div>
+                      <div class="text flex-grow-1">
+                        <h5 class="title">AARC Haveeru Coastal Awareness Festival for School Children - 2012</h5>
+                        <p>LEADS organized a 3 day SAARC Haveeru Coastal Awareness Festival for School children from
+                          16th
+                          November to 18th November 2012 supported by SAARC Coastal Zone Management Centre , Maldives .
+                          The
+                          theme of the event was " Save Coastal Area Save Bangladesh, Save Yourself ." For the first
+                          time
+                          this kind of event involving the school children has been organized where almost 400 children
+                          from
+                          different schools like Viqarunnisa Noon School and College,
+                          <a href="#">Read More</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="single_service">
+                    <div class="service_item d-flex">
+                      <div class="image flex-shrink-0">
+                        <img src="images/item-5.jpg" alt="item" class="img-fluid w-100">
+                      </div>
+                      <div class="text flex-grow-1">
+                        <h5 class="title">AARC Haveeru Coastal Awareness Festival for School Children - 2012</h5>
+                        <p class="text-center"><strong>Workshop with the School Teachers</strong></p>
+                        <p><strong>LEADS organized a 3 day SAARC Haveeru Coastal Awareness Festival for School children
+                            from 16th
+                            November to 18th November 2012 supported by SAARC Coastal Zone Management Centre , Maldives
+                            .
+                            The
+                            theme of the event was " Save Coastal Area Save Bangladesh, Save Yourself ." For the first
+                            time
+                            this kind of event involving the school children has been organized where almost 400
+                            children
+                            from
+                            different schools like Viqarunnisa Noon School and College,</strong>
+                          <a href="#">Read More</a>
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="right_sidebar">
-              <div class="calendar">
-                <h4 class="section_title">Event Calender
-                </h4>
-                <div class="evt_calendar">
-                  <div class="icalendar">
-                    <div class="icalendar__month">
-                      <div class="icalendar__prev" onclick="moveDate('prev')">
-                        <span>&#10094</span>
-                      </div>
-                      <div class="icalendar__current-date">
-                        <h2 id="icalendarMonth"></h2>
-                        <div>
-                          <div id="icalendarDateStr"></div>
+            <div class="col-lg-4">
+              <div class="right_sidebar">
+                <div class="calendar">
+                  <h4 class="section_title">Event Calender
+                  </h4>
+                  <div class="evt_calendar">
+                    <div class="icalendar">
+                      <div class="icalendar__month">
+                        <div class="icalendar__prev" onclick="moveDate('prev')">
+                          <span>&#10094</span>
                         </div>
-  
-                      </div>
-                      <div class="icalendar__next" onclick="moveDate('next')">
-                        <span>&#10095</span>
-                      </div>
-                    </div>
-                    <div class="icalendar__week-days">
-                      <div>Sun</div>
-                      <div>Mon</div>
-                      <div>Tue</div>
-                      <div>Wed</div>
-                      <div>Thu</div>
-                      <div>Fri</div>
-                      <div>Sat</div>
-                    </div>
-                    <div class="icalendar__days"></div>
-                  </div>
-                </div>
+                        <div class="icalendar__current-date">
+                          <h2 id="icalendarMonth"></h2>
+                          <div>
+                            <div id="icalendarDateStr"></div>
+                          </div>
 
-              </div>
-              <div class="news mt20">
-                <h4 class="section_title">Latest News
-                </h4>
-                <ul class="list-unstyled news_slider">
-                  <li class="d-flex gap-3">
-                    <div class="date flex-shrink-0">
-                      <span class="number">14</span>
-                      <span class="nmonth">FEB</span>
+                        </div>
+                        <div class="icalendar__next" onclick="moveDate('next')">
+                          <span>&#10095</span>
+                        </div>
+                      </div>
+                      <div class="icalendar__week-days">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                      </div>
+                      <div class="icalendar__days"></div>
                     </div>
-                    <div class="desc flex-grow-1">
-                      <a href="#" class="title txthover">
-                        Environmental Awareness Session at Residential Model School and College on 14th February 2013
-                      </a>
-                      <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
-                  </li>
-                  <li class="d-flex gap-3">
-                    <div class="date flex-shrink-0">
-                      <span class="number">14</span>
-                      <span class="nmonth">FEB</span>
-                    </div>
-                    <div class="desc flex-grow-1">
-                      <a href="#" class="title txthover">
-                        Environmental Awareness Session at Residential Model School and College on 14th February 2013
-                      </a>
-                      <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
-                  </li>
-                  <li class="d-flex gap-3">
-                    <div class="date flex-shrink-0">
-                      <span class="number">14</span>
-                      <span class="nmonth">FEB</span>
-                    </div>
-                    <div class="desc flex-grow-1">
-                      <a href="#" class="title txthover">
-                        Environmental Awareness Session at Residential Model School and College on 14th February 2013
-                      </a>
-                      <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
-                  </li>
-                  <li class="d-flex gap-3">
-                    <div class="date flex-shrink-0">
-                      <span class="number">14</span>
-                      <span class="nmonth">FEB</span>
-                    </div>
-                    <div class="desc flex-grow-1">
-                      <a href="#" class="title txthover">
-                        Environmental Awareness Session at Residential Model School and College on 14th February 2013
-                      </a>
-                      <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
-                  </li>
-                  <li class="d-flex gap-3">
-                    <div class="date flex-shrink-0">
-                      <span class="number">14</span>
-                      <span class="nmonth">FEB</span>
-                    </div>
-                    <div class="desc flex-grow-1">
-                      <a href="#" class="title txthover">
-                        Environmental Awareness Session at Residential Model School and College on 14th February 2013
-                      </a>
-                      <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
-                  </li>
-                  <li class="d-flex gap-3">
-                    <div class="date flex-shrink-0">
-                      <span class="number">14</span>
-                      <span class="nmonth">FEB</span>
-                    </div>
-                    <div class="desc flex-grow-1">
-                      <a href="#" class="title txthover">
-                        Environmental Awareness Session at Residential Model School and College on 14th February 2013
-                      </a>
-                      <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
-                  </li>
-                  <li class="d-flex gap-3">
-                    <div class="date flex-shrink-0">
-                      <span class="number">14</span>
-                      <span class="nmonth">FEB</span>
-                    </div>
-                    <div class="desc flex-grow-1">
-                      <a href="#" class="title txthover">
-                        Environmental Awareness Session at Residential Model School and College on 14th February 2013
-                      </a>
-                      <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
-                  </li>
-                  <li class="d-flex gap-3">
-                    <div class="date flex-shrink-0">
-                      <span class="number">14</span>
-                      <span class="nmonth">FEB</span>
-                    </div>
-                    <div class="desc flex-grow-1">
-                      <a href="#" class="title txthover">
-                        Environmental Awareness Session at Residential Model School and College on 14th February 2013
-                      </a>
-                      <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
-                  </li>
-                  <li class="d-flex gap-3">
-                    <div class="date flex-shrink-0">
-                      <span class="number">14</span>
-                      <span class="nmonth">FEB</span>
-                    </div>
-                    <div class="desc flex-grow-1">
-                      <a href="#" class="title txthover">
-                        Environmental Awareness Session at Residential Model School and College on 14th February 2013
-                      </a>
-                      <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
-                  </li>
-                  <li class="d-flex gap-3">
-                    <div class="date flex-shrink-0">
-                      <span class="number">14</span>
-                      <span class="nmonth">FEB</span>
-                    </div>
-                    <div class="desc flex-grow-1">
-                      <a href="#" class="title txthover">
-                        Environmental Awareness Session at Residential Model School and College on 14th February 2013
-                      </a>
-                      <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
-                  </li>
-                </ul>
+                  </div>
+
+                </div>
+                <div class="news mt20">
+                  <h4 class="section_title">Latest News
+                  </h4>
+                  <ul class="list-unstyled news_slider">
+                    <li class="d-flex gap-3">
+                      <div class="date flex-shrink-0">
+                        <span class="number">14</span>
+                        <span class="nmonth">FEB</span>
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <a href="#" class="title txthover">
+                          Environmental Awareness Session at Residential Model School and College on 14th February 2013
+                        </a>
+                        <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
+                    </li>
+                    <li class="d-flex gap-3">
+                      <div class="date flex-shrink-0">
+                        <span class="number">14</span>
+                        <span class="nmonth">FEB</span>
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <a href="#" class="title txthover">
+                          Environmental Awareness Session at Residential Model School and College on 14th February 2013
+                        </a>
+                        <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
+                    </li>
+                    <li class="d-flex gap-3">
+                      <div class="date flex-shrink-0">
+                        <span class="number">14</span>
+                        <span class="nmonth">FEB</span>
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <a href="#" class="title txthover">
+                          Environmental Awareness Session at Residential Model School and College on 14th February 2013
+                        </a>
+                        <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
+                    </li>
+                    <li class="d-flex gap-3">
+                      <div class="date flex-shrink-0">
+                        <span class="number">14</span>
+                        <span class="nmonth">FEB</span>
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <a href="#" class="title txthover">
+                          Environmental Awareness Session at Residential Model School and College on 14th February 2013
+                        </a>
+                        <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
+                    </li>
+                    <li class="d-flex gap-3">
+                      <div class="date flex-shrink-0">
+                        <span class="number">14</span>
+                        <span class="nmonth">FEB</span>
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <a href="#" class="title txthover">
+                          Environmental Awareness Session at Residential Model School and College on 14th February 2013
+                        </a>
+                        <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
+                    </li>
+                    <li class="d-flex gap-3">
+                      <div class="date flex-shrink-0">
+                        <span class="number">14</span>
+                        <span class="nmonth">FEB</span>
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <a href="#" class="title txthover">
+                          Environmental Awareness Session at Residential Model School and College on 14th February 2013
+                        </a>
+                        <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
+                    </li>
+                    <li class="d-flex gap-3">
+                      <div class="date flex-shrink-0">
+                        <span class="number">14</span>
+                        <span class="nmonth">FEB</span>
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <a href="#" class="title txthover">
+                          Environmental Awareness Session at Residential Model School and College on 14th February 2013
+                        </a>
+                        <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
+                    </li>
+                    <li class="d-flex gap-3">
+                      <div class="date flex-shrink-0">
+                        <span class="number">14</span>
+                        <span class="nmonth">FEB</span>
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <a href="#" class="title txthover">
+                          Environmental Awareness Session at Residential Model School and College on 14th February 2013
+                        </a>
+                        <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
+                    </li>
+                    <li class="d-flex gap-3">
+                      <div class="date flex-shrink-0">
+                        <span class="number">14</span>
+                        <span class="nmonth">FEB</span>
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <a href="#" class="title txthover">
+                          Environmental Awareness Session at Residential Model School and College on 14th February 2013
+                        </a>
+                        <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
+                    </li>
+                    <li class="d-flex gap-3">
+                      <div class="date flex-shrink-0">
+                        <span class="number">14</span>
+                        <span class="nmonth">FEB</span>
+                      </div>
+                      <div class="desc flex-grow-1">
+                        <a href="#" class="title txthover">
+                          Environmental Awareness Session at Residential Model School and College on 14th February 2013
+                        </a>
+                        <a class="readmore" href="/pages/description_of_up_event/22">Read More</a> </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- what we do area end -->
-  <!-- sponsor area start -->
-  <section class="sponsor_area mt20">
-    <div class="container">
-      <div class="sponsor_main">
-        <h4 class="section_title text-center">Sponsors and Partners
-        </h4>
-        <ul class="list-unstyled d-flex align-items-center justify-content-center gap-5">
-          <li>
-            <a href="#">
-              <img src="images/sp-1.jpg" alt="sponsor">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/sp-2.jpg" alt="sponsor">
-            </a>
-          </li>
-        </ul>
+    </section>
+    <!-- what we do area end -->
+    <!-- sponsor area start -->
+    <section class="sponsor_area mt20">
+      <div class="container">
+        <div class="sponsor_main">
+          <h4 class="section_title text-center">Sponsors and Partners
+          </h4>
+          <ul class="list-unstyled d-flex align-items-center justify-content-center gap-5">
+            <li>
+              <a href="#">
+                <img src="images/sp-1.jpg" alt="sponsor">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/sp-2.jpg" alt="sponsor">
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- sponsor area end -->
+    </section>
+    <!-- sponsor area end -->
+  </main>
   <!-- main area end -->
   <!-- footer area start -->
-  <footer class="footer_area">
+  <footer class="footer_area mt20">
     <div class="container">
       <div class="row">
         <div class="col-lg-8">
@@ -639,6 +680,7 @@
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.marquee.js"></script>
   <script src="js/javascript-calendar.js"></script>
+  <script src="js/lightbox.js"></script>
   <!-- <script src="js/gsap.js"></script>
   <script src="js/gsap-scroll-trigger.js"></script>
   <script src="js/gsap-split-text.js"></script>

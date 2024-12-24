@@ -1,0 +1,100 @@
+.contact_page {
+  padding: 0 20px 20px 20px;
+
+  .contact_form {
+    border: 1px solid $border;
+    margin-top: 15px;
+
+    .form_main {
+      padding: 10px 20px 20px 20px;
+    }
+
+    .input_groups {
+      label {
+        color: #4a4a4a;
+        font-size: 16px;
+        padding-bottom: 10px;
+        display: block;
+
+        small {
+          font-size: 10px;
+          color: #b1b1b1;
+          padding-left: 6px;
+        }
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        border: #c1c1c1 solid 1px;
+        background: #f6f6f6;
+        box-shadow: inset 0px 1px 2px #ccc;
+        position: relative;
+        height: 34px;
+        padding: 0 14px;
+        font-size: 12px;
+        color: #666;
+      }
+
+      .error {
+        color: red;
+        display: block;
+        margin-top: 2px;
+        font-weight: 500;
+      }
+
+      textarea {
+        height: 100px;
+        padding: 14px;
+      }
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 7px 10px;
+      color: #222222 !important;
+      display: inline-block;
+      background: url(../images/button.gif) repeat-x top;
+      border-radius: 3px;
+      font-size: 14px;
+      cursor: pointer;
+      border: #d3d3d3 solid 1px;
+      transition: none;
+
+      &:hover {
+        background: #e5e5e5;
+      }
+
+      span {
+        padding: 2px 10px 2px 10px;
+        color: #222222 !important;
+        display: inline-block;
+        background: url(../images/button.gif) repeat-x top;
+        border-radius: 3px;
+        font-size: 14px;
+        border: #d3d3d3 solid 1px;
+      }
+    }
+
+    .input_groups+.input_groups {
+      margin-top: 10px;
+    }
+  }
+
+  .contact_map {
+    .map_main {
+      border: 1px solid $border;
+      padding: 3px;
+
+      .address {
+        p {
+          font-weight: 500;
+
+          a {
+            color: rgb(89, 145, 0);
+          }
+        }
+      }
+    }
+  }
+}

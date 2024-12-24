@@ -1,0 +1,86 @@
+.content_page_body {
+  padding: 20px;
+  padding-top: 10px;
+
+  .c1 {
+    color: $primary;
+  }
+
+  .c2 {
+    color: rgb(89, 145, 0);
+  }
+
+  p+p {
+    margin-top: 12px;
+  }
+
+  .common_tabs {
+   
+    .nav {
+      .nav-link {
+        border: medium none;
+        color: #666666;
+        font-size: 12px;
+        margin: 0;
+        text-shadow: 0 1px $white;
+        padding: 8px 12px;
+        background-image: linear-gradient(to bottom, $white, #E3E3E3);
+        border-bottom: medium none !important;
+        border-image: none;
+        border-left: 1px solid #E3E3E3;
+        border-radius: 5px 5px 0 0;
+        border-right: 1px solid #E3E3E3;
+        border-top: 1px solid #E3E3E3;
+        margin-right: 10px;
+        text-transform: uppercase;
+        font-weight: 400;
+
+        &:hover {
+          background-image: none;
+          background-color: $primary;
+          text-shadow: none;
+          color: $white;
+          border-color: $primary;
+        }
+      }
+    }
+    .tab-content{
+      border: 1px solid $border;
+      padding: 14px;
+    }
+  }
+
+  .common_table{
+    table{
+      thead{
+        background: $primary;
+        th{
+          color: $white;
+          font-size: 500;
+          white-space: nowrap;
+        }
+      }
+      th,td{
+        vertical-align: middle;
+      }
+      tbody{
+        td{
+          .read_more{
+            color: red;
+            font-weight: 500;
+            background: url(../images/readmore.png) no-repeat 0px 5px;
+            padding: 0px 0px 0px 10px;
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+        .download{
+          background: transparent;
+          border: 0;
+          color: #551A8B;
+        }
+        }
+      }
+    }
+  }
+}

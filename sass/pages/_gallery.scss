@@ -1,0 +1,47 @@
+.gallery_page {
+  padding: 20px;
+  padding-top: 10px;
+
+  .gallery_row {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+
+    .col {
+      height: 100%;
+
+      .gallery_item {
+        padding: 4px;
+        background: #F0F0F0;
+        height: 100%;
+
+        .text {
+          padding-top: 4px;
+
+          .title {
+            font-size: 11px;
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+.photo_album_page {
+  .gallery_row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2px;
+
+    .gallery_item {
+      padding: 0px !important;
+      height: 100%;
+      border: 2px solid gray;
+
+      &:hover{
+        border-color: $white;
+      }
+    }
+  }
+}

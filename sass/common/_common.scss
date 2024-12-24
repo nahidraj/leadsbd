@@ -60,9 +60,8 @@ body {
 }
 
 p {
-
   color: $paragraph;
-  line-height:18px;
+  line-height: 18px;
   font-size: 12px;
   font-weight: 400;
 }
@@ -78,7 +77,18 @@ p {
   color: $primary;
 }
 
-// common btn
+// theme btn
+.theme-btn {
+  background-color: $primary;
+  color: $white;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 7px 12px;
+  &:hover{
+    background: $black;
+  }
+}
 
 .mt20 {
   margin-top: 20px;

@@ -82,6 +82,18 @@ p {
   color: #005EB5;
 }
 
+.theme-btn {
+  background-color: #005EB5;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 7px 12px;
+}
+.theme-btn:hover {
+  background: #1f2020;
+}
+
 .mt20 {
   margin-top: 20px;
 }
@@ -163,6 +175,11 @@ p {
 
 .header_area {
   padding: 20px 0;
+  position: relative;
+  z-index: 999;
+}
+.header_area .menu ul li {
+  position: relative;
 }
 .header_area .menu ul li a {
   font-size: 14px;
@@ -172,11 +189,43 @@ p {
   background: transparent;
   border-radius: 3px;
 }
-.header_area .menu ul li a:hover {
+.header_area .menu ul li .sub_menu {
+  width: 200px;
+  background: #005EB5;
+  border-radius: 5px;
+  position: absolute;
+  top: 100%;
+  left: 6px;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+  border-top-left-radius: 0;
+}
+.header_area .menu ul li .sub_menu li a {
+  font-size: 14px;
+  border-radius: 2px;
+  padding: 10px 10px;
+  color: #ffffff;
+  background: transparent;
+  width: 100%;
+}
+.header_area .menu ul li .sub_menu li a:hover {
+  background: #33CCFF;
+}
+.header_area .menu ul li .sub_menu li + li {
+  padding-left: 0;
+}
+.header_area .menu ul li .active {
   background: #005EB5;
   color: #ffffff;
 }
-.header_area .menu ul li .active {
+.header_area .menu ul li:hover .sub_menu {
+  visibility: visible;
+  opacity: 1;
+}
+.header_area .menu ul li:hover .main_menu {
   background: #005EB5;
   color: #ffffff;
 }
@@ -1042,4 +1091,208 @@ p {
   opacity: 1;
   visibility: visible;
   bottom: 75px;
+}
+
+.content_area .content_main {
+  border: 1px solid #e6e6e6;
+}
+.content_area .content_main .section_title {
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.gallery_page {
+  padding: 20px;
+  padding-top: 10px;
+}
+.gallery_page .gallery_row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+.gallery_page .gallery_row .col {
+  height: 100%;
+}
+.gallery_page .gallery_row .col .gallery_item {
+  padding: 4px;
+  background: #F0F0F0;
+  height: 100%;
+}
+.gallery_page .gallery_row .col .gallery_item .text {
+  padding-top: 4px;
+}
+.gallery_page .gallery_row .col .gallery_item .text .title {
+  font-size: 11px;
+  color: #005EB5;
+}
+
+.photo_album_page .gallery_row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2px 1fr 2px 1fr 2px 1fr 2px 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2px;
+}
+.photo_album_page .gallery_row .gallery_item {
+  padding: 0px !important;
+  height: 100%;
+  border: 2px solid gray;
+}
+.photo_album_page .gallery_row .gallery_item:hover {
+  border-color: #ffffff;
+}
+
+.contact_page {
+  padding: 0 20px 20px 20px;
+}
+.contact_page .contact_form {
+  border: 1px solid #e6e6e6;
+  margin-top: 15px;
+}
+.contact_page .contact_form .form_main {
+  padding: 10px 20px 20px 20px;
+}
+.contact_page .contact_form .input_groups label {
+  color: #4a4a4a;
+  font-size: 16px;
+  padding-bottom: 10px;
+  display: block;
+}
+.contact_page .contact_form .input_groups label small {
+  font-size: 10px;
+  color: #b1b1b1;
+  padding-left: 6px;
+}
+.contact_page .contact_form .input_groups input,
+.contact_page .contact_form .input_groups textarea {
+  width: 100%;
+  border: #c1c1c1 solid 1px;
+  background: #f6f6f6;
+  -webkit-box-shadow: inset 0px 1px 2px #ccc;
+          box-shadow: inset 0px 1px 2px #ccc;
+  position: relative;
+  height: 34px;
+  padding: 0 14px;
+  font-size: 12px;
+  color: #666;
+}
+.contact_page .contact_form .input_groups .error {
+  color: red;
+  display: block;
+  margin-top: 2px;
+  font-weight: 500;
+}
+.contact_page .contact_form .input_groups textarea {
+  height: 100px;
+  padding: 14px;
+}
+.contact_page .contact_form button {
+  margin-top: 20px;
+  padding: 7px 10px;
+  color: #222222 !important;
+  display: inline-block;
+  background: url(../images/button.gif) repeat-x top;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+  border: #d3d3d3 solid 1px;
+  -webkit-transition: none;
+  transition: none;
+}
+.contact_page .contact_form button:hover {
+  background: #e5e5e5;
+}
+.contact_page .contact_form button span {
+  padding: 2px 10px 2px 10px;
+  color: #222222 !important;
+  display: inline-block;
+  background: url(../images/button.gif) repeat-x top;
+  border-radius: 3px;
+  font-size: 14px;
+  border: #d3d3d3 solid 1px;
+}
+.contact_page .contact_form .input_groups + .input_groups {
+  margin-top: 10px;
+}
+.contact_page .contact_map .map_main {
+  border: 1px solid #e6e6e6;
+  padding: 3px;
+}
+.contact_page .contact_map .map_main .address p {
+  font-weight: 500;
+}
+.contact_page .contact_map .map_main .address p a {
+  color: rgb(89, 145, 0);
+}
+
+.content_page_body {
+  padding: 20px;
+  padding-top: 10px;
+}
+.content_page_body .c1 {
+  color: #005EB5;
+}
+.content_page_body .c2 {
+  color: rgb(89, 145, 0);
+}
+.content_page_body p + p {
+  margin-top: 12px;
+}
+.content_page_body .common_tabs .nav .nav-link {
+  border: medium none;
+  color: #666666;
+  font-size: 12px;
+  margin: 0;
+  text-shadow: 0 1px #ffffff;
+  padding: 8px 12px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#E3E3E3));
+  background-image: linear-gradient(to bottom, #ffffff, #E3E3E3);
+  border-bottom: medium none !important;
+  -o-border-image: none;
+     border-image: none;
+  border-left: 1px solid #E3E3E3;
+  border-radius: 5px 5px 0 0;
+  border-right: 1px solid #E3E3E3;
+  border-top: 1px solid #E3E3E3;
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.content_page_body .common_tabs .nav .nav-link:hover {
+  background-image: none;
+  background-color: #005EB5;
+  text-shadow: none;
+  color: #ffffff;
+  border-color: #005EB5;
+}
+.content_page_body .common_tabs .tab-content {
+  border: 1px solid #e6e6e6;
+  padding: 14px;
+}
+.content_page_body .common_table table thead {
+  background: #005EB5;
+}
+.content_page_body .common_table table thead th {
+  color: #ffffff;
+  font-size: 500;
+  white-space: nowrap;
+}
+.content_page_body .common_table table th, .content_page_body .common_table table td {
+  vertical-align: middle;
+}
+.content_page_body .common_table table tbody td .read_more {
+  color: red;
+  font-weight: 500;
+  background: url(../images/readmore.png) no-repeat 0px 5px;
+  padding: 0px 0px 0px 10px;
+}
+.content_page_body .common_table table tbody td .read_more:hover {
+  text-decoration: underline;
+}
+.content_page_body .common_table table tbody td .download {
+  background: transparent;
+  border: 0;
+  color: #551A8B;
 }

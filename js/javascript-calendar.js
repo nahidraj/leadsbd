@@ -3,6 +3,17 @@
 let dt = new Date();
 
 function renderDate() {
+    // Check if the calendar elements exist
+    const calendarMonth = document.getElementById("icalendarMonth");
+    const calendarDateStr = document.getElementById("icalendarDateStr");
+    const calendarDays = document.getElementsByClassName("icalendar__days")[0];
+
+    if (!calendarMonth || !calendarDateStr || !calendarDays) {
+        // Exit the function if any required element is missing
+        console.warn("Calendar elements are missing on this page. Skipping renderDate.");
+        return;
+    }
+
     dt.setDate(1); // Set to the first day of the current month
     let day = dt.getDay(); // Get the weekday of the first day
     let endDate = new Date(
@@ -29,8 +40,8 @@ function renderDate() {
     ];
 
     // Set the month and date string
-    document.getElementById("icalendarMonth").innerHTML = months[dt.getMonth()] + " , " + dt.getFullYear();
-    document.getElementById("icalendarDateStr").innerHTML = today.toDateString();
+    calendarMonth.innerHTML = months[dt.getMonth()] + " , " + dt.getFullYear();
+    calendarDateStr.innerHTML = today.toDateString();
 
     let cells = "";
 
@@ -49,11 +60,8 @@ function renderDate() {
     }
 
     // Set the inner HTML of the calendar days container
-    document.getElementsByClassName("icalendar__days")[0].innerHTML = cells;
+    calendarDays.innerHTML = cells;
 }
-
-// Call renderDate initially
-renderDate();
 
 // Function to navigate between months
 function moveDate(param) {
@@ -64,3 +72,8 @@ function moveDate(param) {
     }
     renderDate();
 }
+
+// Call renderDate initially
+document.addEventListener("DOMContentLoaded", () => {
+    renderDate();
+});
