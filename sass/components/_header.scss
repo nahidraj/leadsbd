@@ -19,6 +19,10 @@
   position: relative;
   z-index: 999;
 
+  @media (max-width:1199.98px) {
+    padding: 10px 0;
+  }
+
   .menu {
     ul {
       li {
@@ -74,10 +78,11 @@
         }
 
         &:hover {
-          .sub_menu{
+          .sub_menu {
             visibility: visible;
             opacity: 1;
           }
+
           .main_menu {
             background: $primary;
             color: $white;
@@ -192,11 +197,12 @@
 }
 
 .mobile-menu-area .mobile-menu-main .menu-body .menu-list ul li a {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 15px;
   color: $black;
   border-top: 1px solid $border;
   width: 100%;
+  font-family: $patua;
   padding: 0px 20px;
   line-height: 40px;
   padding-right: 10px;

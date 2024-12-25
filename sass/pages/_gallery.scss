@@ -4,8 +4,21 @@
 
   .gallery_row {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
     gap: 10px;
+    grid-template-columns: repeat(7, 1fr);
+
+    @media (max-width:1399.98px) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    @media (max-width:1199.98px) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    @media (max-width:991.98px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @media (max-width:575.98px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
 
     .col {
       height: 100%;
@@ -31,15 +44,27 @@
 .photo_album_page {
   .gallery_row {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
     gap: 2px;
+    grid-template-columns: repeat(5, 1fr);
+    @media (max-width:1399.98px) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    @media (max-width:1199.98px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @media (max-width:991.98px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width:575.98px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
 
     .gallery_item {
       padding: 0px !important;
       height: 100%;
       border: 2px solid gray;
 
-      &:hover{
+      &:hover {
         border-color: $white;
       }
     }
