@@ -42,7 +42,7 @@
 
           p,
           a {
-            font-size: 20px;
+            font-size: 18px;
             color: #005EB5;
             line-height: 30px;
             padding: 0px;
@@ -58,6 +58,9 @@
               margin-top: 10px;
               text-shadow: none;
             }
+          }
+          a{
+            font-size: 20px;
           }
         }
       }
@@ -93,6 +96,7 @@
         background-image: linear-gradient(to bottom, #0088CC, #0044CC);
         box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
         background-color: #006DCC;
+        font-family: $patua;
 
         &:hover {
           background-color: #006DCC;
@@ -124,6 +128,7 @@
         padding: 10px;
         color: white;
         font-weight: bold;
+        font-family: $roboto;
       }
     }
   }
@@ -138,236 +143,4 @@
       }
     }
   }
-}
-
-// .evt_calendar{
-//   .calander {
-//     background-color: white;
-//     // padding: 0.75rem;
-//     border-radius: 0.75rem;
-//     display: grid;
-//     gap: 0;
-//     cursor: default;
-//     // box-shadow: 0 2px 8px #00000050;
-//   }
-  
-//   .week {
-//     display: grid;
-//     grid-template-columns: repeat(7, 1fr);
-//     grid-auto-columns: 1fr;
-//     grid-auto-rows: 1fr;
-//     gap: 0;
-//   }
-  
-//   .weekday {
-//     text-align: center;
-//     border-radius: 0.25rem;
-//     box-sizing: border-box;
-//     color: #666666;
-//     font-size: 10px;
-//     font-weight: 600;
-//     padding: 0rem;
-//     text-align: center;
-//     border-radius: 0.25rem;
-//   }
-  
-//   .month {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     padding: 0.75rem;
-//     border-radius: inherit;
-//     // background-color: cornflowerblue;
-//     color: $black;
-//   }
-  
-//   .month>* {
-//     margin: 0;
-//     text-align: center;
-//   }
-  
-//   .month button {
-//     border: none;
-//     height: 3rem;
-//     width: 3rem;
-//     padding: 0.25rem;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     text-align: center;
-//     border-radius: 0.25rem;
-//     background-color: #00000030;
-//     color: white;
-//     cursor: pointer;
-  
-//   }
-  
-//   .days {
-//     display: grid;
-//     grid-template-columns: repeat(7, 1fr);
-//     gap: 0;
-//   }
-  
-//   .day {
-//     background: url(../images/calendar-bg.gif) no-repeat scroll left center rgba(0, 0, 0, 0);
-//     border-bottom: 1px solid #E2E2E2;
-//     border-right: 1px solid #E2E2E2;
-//     box-sizing: border-box;
-//     padding: 0.75rem;
-//     text-align: center;
-//     border-radius: 0.25rem;
-  
-//     &:hover {
-//       order-bottom: 1px solid #E2E2E2;
-//       border-right: 1px solid #E2E2E2;
-//       box-shadow: inset 0px 0px 10px #333;
-//       background: #005EB5;
-//       color: $white;
-//     }
-//   }
-  
-//   .day:hover {
-//     // box-shadow: inset 0 0 8px #00000030;
-//   }
-  
-//   .year {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     // padding: 0.75rem;
-//     border-radius: inherit;
-//     // background-color: cornflowerblue;
-//     color: $black;
-//   }
-  
-//   .year>* {
-//     margin: 0;
-//     text-align: center;
-//   }
-  
-//   .year button {
-//     border: none;
-//     // height: 3rem;
-//     // width: 100%;
-//     padding: 0.25rem;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     text-align: center;
-//     border-radius: 0.25rem;
-//     // background-color: #00000030;
-//     color: $black;
-//     cursor: pointer;
-//     // box-shadow: 0 0 8px #00000030;
-//   }
-// }
-
-.calander {
-  background-color: white;
-  padding: 0.75rem;
-  border-radius: 0.75rem;
-  display: grid;
-  gap: 0.5rem;
-  cursor: default;
-  box-shadow: 0 2px 8px #00000050;
-}
-.week {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-auto-columns: 1fr;
-  grid-auto-rows: 1fr;
-  gap: 0.5rem;
-}
-
-.weekday {
-  text-align: center;
-  padding: 0.75rem;
-  border-radius: 0.25rem;
-  box-shadow: 0 0 8px #00000030;
-}
-
-.month {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.75rem;
-  border-radius: inherit;
-  background-color: cornflowerblue;
-  color: white;
-}
-
-.month > * {
-  margin: 0;
-  text-align: center;
-}
-
-.month button {
-  border: none;
-  height: 3rem;
-  width: 3rem;
-  padding: 0.25rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 0.25rem;
-  background-color: #00000030;
-  color: white;
-  cursor: pointer;
-  box-shadow: 0 0 8px #00000030;
-}
-
-.days {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 0.5rem;
-}
-
-.day {
-  box-shadow: 0 0 8px #00000030;
-  padding: 0.75rem;
-  text-align: center;
-  border-radius: 0.25rem;
-}
-
-.day:hover {
-  box-shadow: inset 0 0 8px #00000030;
-}
-
-.year {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.75rem;
-  border-radius: inherit;
-  background-color: cornflowerblue;
-  color: white;
-}
-
-.year > * {
-  margin: 0;
-  text-align: center;
-}
-
-.year button {
-  border: none;
-  height: 3rem;
-  width: 3rem;
-  padding: 0.25rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 0.25rem;
-  background-color: #00000030;
-  color: white;
-  cursor: pointer;
-  box-shadow: 0 0 8px #00000030;
-}
-
-.output {
-  background: linear-gradient(135deg, #4080a2, #50cea2) no-repeat;
-  padding: 0.75rem;
-  border-radius: 0.5rem;
-  color: white;
 }

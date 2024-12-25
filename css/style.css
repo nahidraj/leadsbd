@@ -47,6 +47,7 @@ a,
 button {
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
+  font-family: "Roboto", serif;
 }
 
 body {
@@ -175,6 +176,7 @@ p {
   font-size: 12px;
   text-align: justify;
   color: #ffffff;
+  font-family: "Roboto", serif;
 }
 
 .header_area {
@@ -192,6 +194,7 @@ p {
   padding: 7px 10px 7px 10px;
   background: transparent;
   border-radius: 3px;
+  font-family: "Patua One", serif;
 }
 .header_area .menu ul li .sub_menu {
   width: 200px;
@@ -552,6 +555,49 @@ p {
   border: 1px solid #e6e6e6;
   padding: 20px;
 }
+.banner_main #loader {
+  width: 100%;
+  height: 348px;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.banner_main #loader .spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #000;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 .banner_main .nivo-prevNav,
 .banner_main .nivo-nextNav {
   -webkit-transition: none;
@@ -651,7 +697,7 @@ p {
 }
 .event_area .event_item .event_slider .slider_item .text p,
 .event_area .event_item .event_slider .slider_item .text a {
-  font-size: 20px;
+  font-size: 18px;
   color: #005EB5;
   line-height: 30px;
   padding: 0px;
@@ -667,6 +713,9 @@ p {
   padding: 0px;
   margin-top: 10px;
   text-shadow: none;
+}
+.event_area .event_item .event_slider .slider_item .text a {
+  font-size: 20px;
 }
 .event_area .event_item::before {
   width: 292px;
@@ -698,6 +747,7 @@ p {
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
           box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
   background-color: #006DCC;
+  font-family: "Patua One", serif;
 }
 .event_area .event_item .button_groups a:hover {
   background-color: #006DCC;
@@ -723,6 +773,7 @@ p {
   padding: 10px;
   color: white;
   font-weight: bold;
+  font-family: "Roboto", serif;
 }
 .event_area .donate .img {
   overflow: hidden;
@@ -731,152 +782,6 @@ p {
   height: 223px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.calander {
-  background-color: white;
-  padding: 0.75rem;
-  border-radius: 0.75rem;
-  display: -ms-grid;
-  display: grid;
-  gap: 0.5rem;
-  cursor: default;
-  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3137254902);
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3137254902);
-}
-
-.week {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 0.5rem 1fr 0.5rem 1fr 0.5rem 1fr 0.5rem 1fr 0.5rem 1fr 0.5rem 1fr;
-  grid-template-columns: repeat(7, 1fr);
-  grid-auto-columns: 1fr;
-  grid-auto-rows: 1fr;
-  gap: 0.5rem;
-}
-
-.weekday {
-  text-align: center;
-  padding: 0.75rem;
-  border-radius: 0.25rem;
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1882352941);
-          box-shadow: 0 0 8px rgba(0, 0, 0, 0.1882352941);
-}
-
-.month {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0.75rem;
-  border-radius: inherit;
-  background-color: cornflowerblue;
-  color: white;
-}
-
-.month > * {
-  margin: 0;
-  text-align: center;
-}
-
-.month button {
-  border: none;
-  height: 3rem;
-  width: 3rem;
-  padding: 0.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  border-radius: 0.25rem;
-  background-color: rgba(0, 0, 0, 0.1882352941);
-  color: white;
-  cursor: pointer;
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1882352941);
-          box-shadow: 0 0 8px rgba(0, 0, 0, 0.1882352941);
-}
-
-.days {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 0.5rem 1fr 0.5rem 1fr 0.5rem 1fr 0.5rem 1fr 0.5rem 1fr 0.5rem 1fr;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 0.5rem;
-}
-
-.day {
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1882352941);
-          box-shadow: 0 0 8px rgba(0, 0, 0, 0.1882352941);
-  padding: 0.75rem;
-  text-align: center;
-  border-radius: 0.25rem;
-}
-
-.day:hover {
-  -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1882352941);
-          box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1882352941);
-}
-
-.year {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0.75rem;
-  border-radius: inherit;
-  background-color: cornflowerblue;
-  color: white;
-}
-
-.year > * {
-  margin: 0;
-  text-align: center;
-}
-
-.year button {
-  border: none;
-  height: 3rem;
-  width: 3rem;
-  padding: 0.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  border-radius: 0.25rem;
-  background-color: rgba(0, 0, 0, 0.1882352941);
-  color: white;
-  cursor: pointer;
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1882352941);
-          box-shadow: 0 0 8px rgba(0, 0, 0, 0.1882352941);
-}
-
-.output {
-  background: linear-gradient(135deg, #4080a2, #50cea2) no-repeat;
-  padding: 0.75rem;
-  border-radius: 0.5rem;
-  color: white;
 }
 
 .what_we_do_area .left_sidebar .service_wrapper {
@@ -912,7 +817,7 @@ p {
 }
 .what_we_do_area .left_sidebar .service_wrapper .single_service .text p a {
   color: red;
-  font-weight: 700;
+  font-weight: 500;
   padding: 0px 0px 0px 10px;
   background: url(../images/readmore.png) no-repeat 0px 6px;
 }
@@ -987,7 +892,7 @@ p {
   color: red;
   padding: 0px 0px 0px 10px;
   background: url(../images/readmore.png) no-repeat 0px 5px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .what_we_do_area .right_sidebar .calendar ul li .desc .readmore:hover,
 .what_we_do_area .right_sidebar .news ul li .desc .readmore:hover {
