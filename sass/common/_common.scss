@@ -18,7 +18,9 @@ p {
   margin: 0;
   padding: 0;
 }
-
+p{
+  font-family: "Roboto", serif;
+}
 span {
   display: inline-block;
 }
@@ -48,7 +50,7 @@ body {
   overflow-x: hidden;
   color: $black;
   line-height: normal;
-  font-family: "Roboto", serif;
+  font-family: "Patua One", serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
